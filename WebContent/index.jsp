@@ -7,6 +7,6 @@
 <title>Servlet Study</title>
 </head>
 <body>
-	<h1>This is My Servlet Study Page.</h1>
+	<h1>This is My Servlet Study Page. -JSP</h1>
 </body>
 </html>
