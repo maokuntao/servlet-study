@@ -8,7 +8,7 @@ public class UserDao {
 
 	public int updateFirstNameByid(String firstName, String id) {
 
-		String updateQuery = "UPDATE `user` SET firstName=' " + firstName + "' WHERE id = " + id;
+		String updateQuery = "UPDATE `user` SET firstName='" + firstName + "' WHERE id = " + id;
 		int updateCount = BaseDao.getInstance().executeUpdate(updateQuery);
 
 		return updateCount;

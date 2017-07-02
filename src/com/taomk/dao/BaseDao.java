@@ -69,19 +69,16 @@ public class BaseDao {
 	public static void main(String[] args) {
 		
 		String query = "SELECT * FROM `user`  WHERE id = 3";
-		
 		List<User> userList = BaseDao.getInstance().executeQuery(query);
-		
 		for (int i = 0; i < userList.size(); i++) {
 			System.out.println(userList.get(i));
 		}
 		
-		String updateQuery = "UPDATE `user` SET firstName='James' WHERE id = 3";
+		String updateQuery = "UPDATE `user` SET firstName='陶茂坤' WHERE id = 3";
 		int updateCount = BaseDao.getInstance().executeUpdate(updateQuery);
 		System.out.println("更新了"+ updateCount + "条数据。");
 		
 		userList = BaseDao.getInstance().executeQuery(query);
-		
 		for (int i = 0; i < userList.size(); i++) {
 			System.out.println(userList.get(i));
 		}

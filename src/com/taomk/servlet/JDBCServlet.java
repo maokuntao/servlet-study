@@ -26,7 +26,8 @@ public class JDBCServlet extends HttpServlet {
 
 		int updateCount = new UserDao().updateFirstNameByid(firstName, id);
 
-		resp.getWriter().append("更新了<h3>" + updateCount + "</h3>条数据");
+		resp.setHeader("Content-type", "text/html;charset=UTF-8");
+		resp.getWriter().append("<p>更新了<font color=\"red\">" + updateCount + "</font>条数据<p>");
 	}
 
 }
